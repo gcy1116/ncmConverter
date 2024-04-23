@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desccription" content="NCM Converter, Convert NCM to MP3, 可以将 NCM 文件转换为 MP3 文件。">
+    <meta name="keywords" content="NCM, MP3, Converter, 音频, 转换器, 音频转换">
+    <title>NCM Converter</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="icon" href="../static/icon/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>NCM Converter</h1>
+    </header>
+    <div class="upload-container">
+        <input type="file" id="file-upload" hidden>
+        <label for="file-upload" class="upload-area">
+            <strong>Drag and drop your files here or click to select files</strong>
+        </label>
+        <progress id="upload-progress" value="0" max="100"></progress>
+    </div>
+    <div class="file-list-container">
+        <ul id="file-list"></ul>
+    </div>
+    <div class="btn">
+        <button id="convert-btn">
+            <strong>Convert</strong>
+        </button>
+        <button id="download-btn" style="display:none;">
+            <strong>Download</strong>
+        </button>
+    </div>
+    <script src="../static/js/script.js"></script>
+    
+</body>
+</html>

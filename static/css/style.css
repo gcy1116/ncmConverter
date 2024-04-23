@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.upload-container {
+    width: 80%;
+    border: 2px dashed rgb(0, 95, 196);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.upload-area {
+    cursor: pointer;
+    color: #555;
+    font-size: 16px;
+    padding: 50px 20px;
+}
+
+progress {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .upload-container {
+        width: 100%;
+    }
+}
+
+.btn {
+    padding: 10px 20px;
+}
+
+#convert-btn, #download-btn {
+    position: relative;
+    display: inline-block;
+    padding: 18px 25px;
+    color: #8077ff;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    letter-spacing: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+#convert-btn, #download-btn {
+    font-family: 'Mona-Light-2', Arial, sans-serif;
+}
+
+#convert-btn:hover {
+    background: #dfd0ff;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 5px #dfd0ff,
+                0 0 25px #dfd0ff,
+                0 0 50px #dfd0ff,
+                0 0 100px #dfd0ff;
+  }
+  
+#download-btn:hover {
+    background: #dfd0ff;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 5px #dfd0ff,
+                0 0 25px #dfd0ff,
+                0 0 50px #dfd0ff,
+                0 0 100px #dfd0ff;
+  }
+.file-list-container {
+    margin-top: 20px;
+    width: 80%; /* 与上传容器宽度一致 */
+    background: #ffffff; /* 背景色白色，以提升可读性 */
+    border-radius: 10px; /* 边角圆润 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 与上传容器相同的阴影 */
+    padding: 20px; /* 内边距，增加空间感 */
+}
+
+.file-list-container ul {
+    list-style: none; /* 去除列表项的默认样式 */
+    padding: 0;
+    margin: 0; /* 重置默认边距 */
+}
+
+.file-list-container li {
+    padding: 10px 15px; /* 增加内边距 */
+    margin-bottom: 5px; /* 底部边距 */
+    background-color: #e0eafc; /* 浅蓝色背景，与页面渐变相协调 */
+    border: 1px solid #cfdef3; /* 边框颜色较浅，更加柔和 */
+    border-radius: 5px; /* 圆润边角 */
+    position: relative; /* 为绝对定位的按钮提供参照 */
+    display: flex; /* 使用Flex布局 */
+    justify-content: space-between; /* 内容两端对齐 */
+    align-items: center; /* 垂直居中 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* 轻微阴影增加立体感 */
+}
+
+.file-list-container li button {
+    border: none;
+    background-color: #ff6b6b; /* 更鲜明的红色，增加对比 */
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px; /* 按钮内边距 */
+    border-radius: 5px; /* 圆润按钮边角 */
+    font-size: 14px; /* 调整字体大小 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 按钮阴影 */
+}
+
+@font-face {
+    font-family: 'Mona-Light-2';
+    src: url('../font/Mona-Light-2.ttf') format('truetype'); /* 调整路径以匹配你的文件位置 */
+}
+
+header h1 {
+    font-size: 40px;
+    font-family: 'Mona-Light-2', Arial, sans-serif; /* Arial, sans-serif 作为后备选项 */
+}
+
+.upload-area {
+    font-size: 18px;
+    font-family: 'Mona-Light-2', Arial, sans-serif;
+    font-style: italic;
+}
