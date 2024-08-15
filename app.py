@@ -9,7 +9,6 @@ app = Flask(__name__, static_folder='./static')
 def home():
     return render_template('index.html')
 
-
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 converted_folder = os.path.join(UPLOAD_FOLDER, 'converted')
@@ -46,7 +45,6 @@ def convert_files():
         return jsonify({'downloadUrl': f'/download/{processed_file_path}'})
     else:
         return jsonify({'error': 'No file was processed.'}), 500
-
 
 @app.route('/download/<filename>', methods=['GET'])
 def download_file(filename):
