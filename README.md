@@ -1,5 +1,7 @@
 # ncmConverter
 
+转换代码参考：https://www.cnblogs.com/cyx-b/p/13443003.html
+
 convert .ncm to .mp3 with python-flask
 
 网页样式预览：
